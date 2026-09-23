@@ -1,0 +1,81 @@
+/* Supperpot site — the app's crepe-paper look. One stylesheet for every page. */
+:root {
+  --paper: #F4EEE2;
+  --card: #FBF7EF;
+  --ink: #2B2520;
+  --steel: #7A6E62;
+  --line: #DDD1BC;
+  --enamel: #274A86;
+  --enamel-soft: #DCE3F1;
+  --butter: #F2C14E;
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
+  --body: "Nunito", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper) url("/img/paper.png") repeat;
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 17px;
+  line-height: 1.6;
+}
+.wrap { max-width: 900px; margin: 0 auto; padding: 0 22px; }
+.narrow { max-width: 720px; }
+
+/* header */
+header { padding: 26px 0 0; }
+.bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.brand { display: flex; align-items: baseline; gap: 10px; text-decoration: none; color: var(--ink); }
+.brand b { font-family: var(--display); font-weight: 900; font-size: 26px; letter-spacing: -0.01em; }
+.brand span { font-family: var(--display); font-style: italic; font-weight: 600; color: var(--steel); font-size: 15px; }
+nav { display: flex; gap: 18px; flex-wrap: wrap; }
+nav a { color: var(--steel); text-decoration: none; font-weight: 700; font-size: 15px; }
+nav a:hover, nav a[aria-current="page"] { color: var(--enamel); }
+
+/* hero */
+.hero { padding: 40px 0 8px; }
+.eyebrow { font-family: var(--display); font-style: italic; font-weight: 600; color: var(--steel); font-size: 20px; }
+h1 { font-family: var(--display); font-weight: 900; font-size: clamp(38px, 7vw, 62px); line-height: 1.02; letter-spacing: -0.015em; margin: 8px 0 14px; text-wrap: balance; }
+.lede { font-size: 19px; color: var(--steel); max-width: 34ch; margin: 0 0 22px; }
+.cta { display: inline-block; background: var(--enamel); color: var(--paper); text-decoration: none; font-weight: 800; padding: 15px 26px; border-radius: 16px; }
+.cta.soft { background: transparent; color: var(--enamel); border: 2px solid var(--enamel); margin-left: 8px; }
+.hero-grid { display: grid; grid-template-columns: 1fr 380px; gap: 28px; align-items: center; }
+.hero-art { width: 100%; border-radius: 22px; }
+
+/* sections */
+h2 { font-family: var(--display); font-weight: 700; font-size: clamp(26px, 4vw, 34px); line-height: 1.15; margin: 54px 0 6px; text-wrap: balance; }
+h3 { font-family: var(--body); font-weight: 800; font-size: 18px; margin: 0 0 4px; }
+p { margin: 0 0 14px; max-width: 65ch; }
+.sub { color: var(--steel); margin-bottom: 22px; }
+
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.feature { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 18px 20px; }
+.feature p { color: var(--steel); margin: 0; font-size: 16px; }
+
+/* screenshot rail */
+.shots { display: flex; gap: 16px; overflow-x: auto; padding: 6px 0 18px; scroll-snap-type: x mandatory; }
+.shots figure { margin: 0; flex: 0 0 240px; scroll-snap-align: start; }
+.shots img { width: 100%; border-radius: 20px; border: 1px solid var(--line); display: block; }
+.shots figcaption { color: var(--steel); font-size: 14px; margin-top: 8px; font-weight: 700; }
+
+/* text pages */
+.doc h1 { font-size: clamp(32px, 6vw, 42px); }
+.doc .meta { color: var(--steel); margin-bottom: 26px; }
+.doc h2 { font-size: 22px; margin: 32px 0 6px; }
+.doc p { max-width: 68ch; }
+.doc ul { max-width: 68ch; padding-left: 20px; }
+.doc li { margin: 6px 0; }
+
+.callout { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 18px 20px; margin: 22px 0; }
+a { color: var(--enamel); }
+
+footer { margin-top: 70px; border-top: 1px solid var(--line); padding: 22px 0 60px; color: var(--steel); font-size: 15px; }
+footer nav { gap: 14px; margin-bottom: 8px; }
+
+@media (max-width: 760px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-art { max-width: 320px; }
+  .lede { max-width: none; }
+}

@@ -4,46 +4,99 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Supperpot — one-pot meals from what you have</title>
-<meta name="description" content="Snap your groceries or type what you have. Supperpot writes a one-pot meal for your skillet, pot, sheet pan, Instant Pot, slow cooker or rice cooker and walks you through it step by step.">
+<meta name="description" content="Snap a photo of your groceries and Supperpot writes a one-pot meal for the cookware you own, then walks you through it one step at a time.">
+<meta property="og:title" content="Supperpot">
+<meta property="og:description" content="One-pot meals from what you already have. One dish to wash.">
+<meta property="og:type" content="website">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,600&family=Nunito:wght@500;600;700;800&display=swap">
-<style>
-  :root { --paper:#F4EEE2; --card:#FBF7EF; --ink:#2B2520; --steel:#7A6E62; --line:#DDD1BC; --enamel:#274A86; --butter:#F2C14E; }
-  * { box-sizing: border-box; }
-  body { margin:0; background:var(--paper); color:var(--ink); font-family:"Nunito",system-ui,sans-serif; font-size:17px; line-height:1.55; }
-  .wrap { max-width:760px; margin:0 auto; padding:48px 20px 72px; }
-  .eyebrow { font-family:"Fraunces",Georgia,serif; font-style:italic; font-weight:600; color:var(--steel); font-size:20px; }
-  h1 { font-family:"Fraunces",Georgia,serif; font-weight:900; font-size:clamp(38px,7vw,60px); line-height:1.02; letter-spacing:-0.01em; margin:6px 0 16px; }
-  h2 { font-family:"Fraunces",Georgia,serif; font-weight:700; font-size:26px; margin:40px 0 10px; }
-  p { max-width:62ch; margin:0 0 14px; }
-  .cta { display:inline-block; background:var(--enamel); color:var(--paper); text-decoration:none; font-weight:800; padding:16px 26px; border-radius:18px; margin-top:8px; }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:22px; padding:18px 22px; margin:14px 0; }
-  ul { padding-left:20px; } li { margin:6px 0; }
-  footer { margin-top:56px; color:var(--steel); font-size:14px; }
-  footer a { color:var(--enamel); }
-</style>
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<div class="wrap">
-  <div class="eyebrow">One dish to wash.</div>
-  <h1>Supperpot</h1>
-  <p>Snap a photo of your groceries or type what's in the fridge. Supperpot writes a one-pot meal for the cookware you actually own and walks you through it, one step at a time, with a little animation for every move.</p>
-  <a class="cta" href="#" id="store">Coming to the App Store</a>
+<header><div class="wrap bar">
+  <a class="brand" href="/"><b>Supperpot</b><span>one dish to wash</span></a>
+  <nav>
+    <a href="#how">How it works</a>
+    <a href="#look">Screens</a>
+    <a href="/support/">Support</a>
+    <a href="/privacy/">Privacy</a>
+    <a href="/terms/">Terms</a>
+  </nav>
+</div></header>
 
-  <h2>What it does</h2>
-  <div class="card"><ul>
-    <li><b>Snap my groceries.</b> A photo of your shelf becomes an ingredient list, then a recipe.</li>
-    <li><b>Only your cookware.</b> Skillet, pot, sheet pan, Instant Pot, slow cooker or rice cooker. Nothing you don't own is ever suggested.</li>
-    <li><b>Cook mode.</b> Groceries → prep → pot. One step per screen, timers, "done when" cues, amounts per step.</li>
-    <li><b>100 illustrated recipes</b> plus new ones written for you. Weekly plan, aisle-grouped grocery list, US or metric.</li>
-  </ul></div>
+<main>
+<section class="wrap hero">
+  <div class="hero-grid">
+    <div>
+      <div class="eyebrow">One dish to wash.</div>
+      <h1>Meals from what you already have.</h1>
+      <p class="lede">Snap a photo of your groceries. Supperpot reads what it sees, writes a one-pot meal for the cookware you actually own, and walks you through it one step at a time.</p>
+      <a class="cta" href="#how">See how it works</a>
+      <a class="cta soft" href="/support/">Get in touch</a>
+    </div>
+    <img class="hero-art" src="/img/scene-groceries.jpg" width="1000" height="1000"
+         alt="Illustration of groceries laid out on a counter: chicken, parsley, lemons, pasta, sour cream, garlic, onion and olive oil.">
+  </div>
+</section>
 
-  <h2>Support</h2>
-  <p>Questions or a recipe that went wrong? Email <a href="mailto:hello@supperpot.com">hello@supperpot.com</a> and include the recipe name and step.</p>
+<section class="wrap" id="how">
+  <h2>How it works</h2>
+  <p class="sub">Three taps from a full fridge to food on the table.</p>
+  <div class="features">
+    <div class="feature">
+      <h3>1. Show it what you have</h3>
+      <p>Photograph your shelf, your fridge or your shopping. Supperpot lists the food it recognises, and you can fix the list by hand. Or just type it.</p>
+    </div>
+    <div class="feature">
+      <h3>2. Get one recipe, not fifty</h3>
+      <p>It writes a single meal built around your ingredients, for the one pot you own, inside the time you have. No scrolling through results.</p>
+    </div>
+    <div class="feature">
+      <h3>3. Cook it step by step</h3>
+      <p>Groceries, then prep, then the pot. One step per screen with a short animation of the move, the amounts for that step, a timer and a cue for when it's done.</p>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <a href="privacy.html">Privacy policy</a> · <a href="mailto:hello@supperpot.com">Contact</a><br>
-    © 2026 Supperpot. Everything lives on your phone. No accounts.
-  </footer>
-</div>
+<section class="wrap" id="look">
+  <h2>What it looks like</h2>
+  <p class="sub">Hand-illustrated, never stock photos. Swipe sideways.</p>
+  <div class="shots">
+    <figure><img src="/img/1-meals.jpg" alt="The Meals screen with the Snap my groceries button and a box to type what you have." loading="lazy"><figcaption>Start from what's in the kitchen</figcaption></figure>
+    <figure><img src="/img/2-cook.jpg" alt="A cooking step showing an animation of chicken in a skillet, the step text, a done-when cue and a timer." loading="lazy"><figcaption>One step at a time</figcaption></figure>
+    <figure><img src="/img/3-recipe.jpg" alt="A recipe page for Chicken Fried Rice with an illustration, servings scaler and ingredients." loading="lazy"><figcaption>Scale it, then cook</figcaption></figure>
+    <figure><img src="/img/4-browse.jpg" alt="The Browse screen filtered to a skillet, with protein, time and diet filters." loading="lazy"><figcaption>Only the pots you own</figcaption></figure>
+    <figure><img src="/img/5-plan.jpg" alt="The Plan screen showing seven days of the week ready to fill." loading="lazy"><figcaption>Seven meals, one list</figcaption></figure>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>What's in it</h2>
+  <div class="features">
+    <div class="feature"><h3>100 illustrated meals</h3><p>Every one cooks in a single vessel, with real timings and honest quantities.</p></div>
+    <div class="feature"><h3>Your cookware only</h3><p>Skillet, pot, sheet pan, Instant Pot, slow cooker, rice cooker. Nothing you don't own is suggested.</p></div>
+    <div class="feature"><h3>A week at a time</h3><p>Plan seven meals and get one grocery list, grouped by supermarket aisle with duplicates merged.</p></div>
+    <div class="feature"><h3>No account</h3><p>No sign-up, no email, no password. Your recipes, plan and notes stay on your phone.</p></div>
+  </div>
+</section>
+
+<section class="wrap narrow">
+  <h2>Supperpot Plus</h2>
+  <div class="callout">
+    <p>The 100-recipe library, cook mode, the planner and the grocery list are <b>free forever</b>.</p>
+    <p>New AI-written recipes and photo scanning are free for three days, two a day. After that <b>Supperpot Plus</b> gives you five a day for <b>$4.99 a month</b> or <b>$29.99 a year</b>.</p>
+    <p style="margin:0">Billed through your Apple ID, cancel any time in your iPhone settings. Full details in the <a href="/terms/">Terms of Use</a>.</p>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">
+  <nav>
+    <a href="/privacy/">Privacy Policy</a>
+    <a href="/terms/">Terms of Use</a>
+    <a href="/support/">Support</a>
+    <a href="mailto:hello@supperpot.com">hello@supperpot.com</a>
+  </nav>
+  © 2026 Supperpot. Everything lives on your phone.
+</div></footer>
 </body>
 </html>
