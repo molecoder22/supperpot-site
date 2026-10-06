@@ -20,19 +20,25 @@
 
 <main class="wrap narrow doc">
   <h1>Privacy Policy</h1>
-  <div class="meta">Last updated 23 September 2026</div>
+  <div class="meta">Version 2.0 &middot; in effect from 7 October 2026 &middot; replaces the version of 23 September 2026</div>
 
   <p>Supperpot is a recipe app for one-pot meals. Signing in is optional: you can use the whole app without an account. This page explains, in plain words, what the app does with data.</p>
 
   <div class="callout">
-    <p style="margin:0"><b>The short version.</b> Your recipes, plan, list and notes stay on your phone. When you ask for a new recipe or scan a photo, that request goes to our server and on to an AI model, tied only to a random number, and the photo is thrown away straight after. If you choose to sign in with Apple or Google we also hold your email address, and nothing more. Nothing is sold, nothing is used for advertising, and there are no trackers.</p>
+    <b>The short version.</b>
+    Your recipes, plan, list and notes stay on your phone. When you ask for a new recipe or scan a photo, that request goes to our server and on to an AI model, tied only to a random number, and the photo is thrown away straight after. If you choose to sign in with Apple or Google we also hold your email address, and nothing more. Nothing is sold, nothing is used for advertising, and there are no trackers.
   </div>
+
+  <h2>Who is responsible for your data</h2>
+  <p>Supperpot is made and run by <b>M&aacute;rio Otruba</b>, a sole trader based in Slovakia. That means I am the data controller: I decide what the app collects and why, and I am the person answerable for it.</p>
+  <p>You can reach me at <a href="mailto:hello@supperpot.com">hello@supperpot.com</a>. There is no support team &mdash; your email comes to me.</p>
+  <p>Because I am based in the European Union, European data protection law (the GDPR) applies to everything Supperpot does, for every user, wherever you live. If you are in the United States or Canada that works in your favour: you get the same protections European users do.</p>
 
   <h2>Signing in is optional</h2>
   <p>You can tap "Continue without an account" and use every part of the app. Nothing is withheld, and we never ask again except from the Settings screen.</p>
   <p>If you do sign in, with Apple or with Google, we receive from them two things: an account identifier and your email address. We do not receive your password, your contacts, your photos, your Google or Apple account contents, or anything else. With Sign in with Apple you may choose "Hide My Email", in which case we only ever see Apple's forwarding address and never your real one.</p>
-  <p>We use that email address for exactly one purpose: to recognise you when you open Supperpot on another phone, so your free trial, your daily recipe count and your Supperpot Plus subscription follow you instead of starting over. We do not send marketing email. We do not sell, rent or share the address, and there is no third party with access to it besides the hosting provider that runs our database.</p>
-  <p>Signing out on the phone removes the account from it immediately. To delete the account and its email address from our server entirely, email us and we will remove it.</p>
+  <p>We use that email address for exactly one purpose: to recognise you when you open Supperpot on another phone, so your free trial, your daily recipe count and your Supperpot Plus subscription follow you instead of starting over. We do not send marketing email. We do not sell, rent or share the address.</p>
+  <p>Signing out on the phone removes the account from it immediately. <b>To delete the account and its email address from the server entirely, open Settings and tap "Delete my account".</b> It asks twice, then erases your account, your email address and your usage record from the server for good. Your recipes, plan and notes stay on the phone, because they were never on the server; "Clear all my data" is the separate button for those.</p>
 
   <h2>What stays on your phone</h2>
   <p>Your kitchen setup (cookware, household size, diet, priorities), saved recipes, weekly plan, grocery list, notes, ratings, cooking history and the basics you tick are stored only on your device. We do not upload them and cannot see them, whether or not you are signed in. Deleting the app deletes them. You can also clear them any time in Settings, "Clear all my data".</p>
@@ -40,6 +46,7 @@
   <h2>Writing a new recipe</h2>
   <p>When you ask for a new recipe, the app sends your chosen filters (cookware, time, protein, diet tags, servings, priorities) and, if you typed one, the list of what you have, to our server, which asks an AI model (Anthropic's Claude) to write the recipe. No name, email, phone number, location or advertising identifier is sent.</p>
   <p>The server stores a random identifier created by the app on first launch, the date, and how many recipes you have made that day, so it can apply the daily allowance. If you are not signed in, that identifier is not linked to you, your Apple ID or your device's own identifiers, and we cannot use it to find out who you are. If you are signed in, the count is held against your account instead, so it is the same on every phone you use.</p>
+  <p>Recipes and illustrations the app makes for you are written by a machine and are labelled in the app as such. No person reads them before you do.</p>
 
   <h2>Snap my groceries</h2>
   <p>If you take a photo or choose one, the picture is sent to the same server and passed to the AI model, which lists the food it can see. The photo is processed and then discarded. It is not stored on our server, not shown to anyone, and not used to train any model. Camera and photo access are only used when you tap the button.</p>
@@ -54,26 +61,78 @@
   <p>The daily pick reminder and the cooking timers are local notifications scheduled on your device. Nothing is sent to a server and no push service is used.</p>
 
   <h2>Analytics and advertising</h2>
-  <p>Supperpot contains no analytics SDK, no advertising SDK and no tracking of any kind. It keeps simple anonymous counts of feature use on your device only, which never leave the phone. Our server keeps ordinary request logs containing the random identifier and a timestamp, for reliability and to stop abuse; they are deleted within 30 days.</p>
+  <p>Supperpot contains no analytics SDK, no advertising SDK and no tracking of any kind. It keeps simple anonymous counts of feature use on your device only, which never leave the phone. Our server keeps ordinary request logs containing the random identifier, the caller's address and a timestamp, for reliability and to stop abuse.</p>
+
+  <h2>Why we are allowed to hold what we hold</h2>
+  <p>European law asks for a reason for each piece of data, not just a description. Here they are.</p>
+  <ul>
+    <li><b>Random device identifier, daily recipe count, subscription status</b> &mdash; to give you what the app promises, including the free trial and the daily allowance. Legal basis: performance of a contract with you.</li>
+    <li><b>Email address and account identifier</b>, if you sign in &mdash; so your trial, allowance and subscription follow you to a new phone. Legal basis: performance of a contract with you.</li>
+    <li><b>Your photo and your "what I have" text</b> &mdash; to write the recipe you asked for. Legal basis: performance of a contract, and for the camera and photo library themselves, your consent, which you give through iOS and can take back in iOS Settings at any time.</li>
+    <li><b>The caller's network address and request logs</b> &mdash; to keep the service up and stop one person running up the AI bill for everyone. Legal basis: our legitimate interest in running a service that does not fall over or go bankrupt.</li>
+  </ul>
+
+  <h2>Who else sees it, and where it goes</h2>
+  <p>Only the companies that have to, to make the app work. Each one handles data on our instructions and may not use it for their own purposes.</p>
+  <ul>
+    <li><b>Supabase</b> &mdash; runs our database, sign-in and server code. Holds the device identifier, the daily counts and, if you signed in, your email address. Servers in the United States.</li>
+    <li><b>Anthropic</b> &mdash; writes the recipes and reads the grocery photos. Receives the recipe request and the photo, never your email, name or location. United States.</li>
+    <li><b>fal.ai</b>, which passes the request to <b>OpenAI's</b> image model &mdash; draws the dish. Receives only a recipe title and ingredient names. United States.</li>
+    <li><b>Apple</b> and, if you choose it, <b>Google</b> &mdash; handle sign-in and, for Apple, the payment. They act on their own account, under their own privacy policies.</li>
+  </ul>
+  <p>That list is everyone. There is no advertising network, no data broker, no analytics company, and nobody who has paid for access.</p>
+  <p><b>Leaving Europe.</b> Our providers run in the United States, so data about you is processed there. We rely on the data protection terms in each provider's own agreement with us to protect it when it travels. If you want to know the current arrangement for a particular provider, email and ask.</p>
+
+  <h2>How long we keep it</h2>
+  <ul>
+    <li><b>Your photo</b> &mdash; not kept. It is read and discarded within the same request.</li>
+    <li><b>Recipe requests</b> &mdash; not kept. We store the count, not what you asked for.</li>
+    <li><b>Device identifier and daily counts</b> &mdash; while you use the app. Counts are kept per day and are not needed once the trial and the day have passed.</li>
+    <li><b>Email address and account</b> &mdash; until you delete your account, which you can do yourself at any time in Settings.</li>
+    <li><b>Server logs</b> &mdash; deleted within 30 days.</li>
+    <li><b>Everything on your phone</b> &mdash; until you clear it or delete the app. We cannot reach it.</li>
+  </ul>
+
+  <h2>Your rights</h2>
+  <p>Wherever you live, you can ask me to:</p>
+  <ul>
+    <li>tell you what data I hold about you, and give you a copy;</li>
+    <li>correct it if it is wrong;</li>
+    <li>delete it &mdash; though for your account you do not have to ask, the button is in Settings;</li>
+    <li>give it to you in a portable form, which the app already does through Settings, "Export my data";</li>
+    <li>stop using it, or object to a use you disagree with;</li>
+    <li>restrict what I do with it while a disagreement is sorted out.</li>
+  </ul>
+  <p>Email <a href="mailto:hello@supperpot.com">hello@supperpot.com</a> and say what you want. I will answer within 30 days. I will not charge you and I will not treat you differently for asking. I may need to check you are who you say you are before handing over data, which for a signed-in account normally means replying from the email address on it.</p>
+  <p>If you think I have handled your data badly, please tell me first &mdash; it is one person and it is probably a mistake I can fix. You also have the right to complain to a regulator. In Slovakia that is the <a href="https://dataprotection.gov.sk/" rel="noopener">&Uacute;rad na ochranu osobn&yacute;ch &uacute;dajov Slovenskej republiky</a>. In Canada it is the Office of the Privacy Commissioner. In the United States it is your state's Attorney General.</p>
+
+  <h2>If you live in California</h2>
+  <p>In the twelve months before the date at the top of this page, Supperpot collected the categories described above: an email address and an account identifier if you signed in, a random device identifier, and internet activity in the form of server logs.</p>
+  <p><b>We have not sold your personal information, and we have not shared it for cross-context behavioural advertising.</b> There is nothing to opt out of, because it does not happen. We do not knowingly collect personal information from anyone under 16. You have the right to know, delete, correct, and not be discriminated against for exercising any of them &mdash; use the same address above.</p>
 
   <h2>Children</h2>
-  <p>Supperpot is not directed at children under 13. The only personal data it can collect is an email address, and only from someone who chooses to sign in.</p>
+  <p>Supperpot is for cooks aged 13 and over. The app asks what year you were born before you can sign in, and turns you away if you are under 13. It keeps only the answer, never the year itself. If you believe a child under 13 has an account, email me and I will delete it.</p>
+
+  <h2>Security, honestly</h2>
+  <p>Everything travels over HTTPS. The database is locked so that the app's public key cannot read any user's record &mdash; only our server code can, using a key that never leaves the server. The AI keys are not in the app and cannot be extracted from it. There are daily limits on what the service can spend.</p>
+  <p>What I will not tell you is that this is unbreakable, because nobody can honestly say that. If something goes wrong and your data is affected, I will tell you and the Slovak regulator, and I will say what happened rather than hide it.</p>
 
   <h2>Your choices</h2>
   <ul>
     <li>You never have to sign in. "Continue without an account" gives you the whole app.</li>
     <li>The 100-recipe library, cook mode, the planner and the grocery list work with no network at all.</li>
     <li>Turning off camera or photo access in iOS Settings disables Snap my groceries and nothing else.</li>
+    <li>"Export my data" in Settings gives you a copy of everything the app holds on your phone.</li>
     <li>"Clear all my data" in Settings erases everything the app has stored on your phone.</li>
     <li>Signing out in Settings removes your account from that phone straight away.</li>
-    <li>To have the server delete your account, your email address and your usage record, email us and say so. We will remove all of it.</li>
+    <li>"Delete my account" in Settings erases your account and email address from the server for good.</li>
   </ul>
 
   <h2>Contact</h2>
-  <p>Questions about this policy: <a href="mailto:hello@supperpot.com">hello@supperpot.com</a></p>
+  <p>M&aacute;rio Otruba, Slovakia &mdash; <a href="mailto:hello@supperpot.com">hello@supperpot.com</a></p>
 
   <h2>Changes</h2>
-  <p>If this policy changes, the new version appears at this address with a new date.</p>
+  <p>If this policy changes, the new version appears at this address with a new version number and date. If a change matters to you &mdash; a new recipient of your data, a new purpose &mdash; I will tell you in the app before it takes effect, not quietly.</p>
 </main>
 
 <footer><div class="wrap">
