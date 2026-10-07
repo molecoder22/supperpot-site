@@ -35,17 +35,17 @@ nav a { color: var(--steel); text-decoration: none; font-weight: 700; font-size:
 nav a:hover, nav a[aria-current="page"] { color: var(--enamel); }
 
 /* hero */
-.hero { padding: 40px 0 8px; }
+.hero { padding: 28px 0 0; }
 .eyebrow { font-family: var(--display); font-style: italic; font-weight: 600; color: var(--steel); font-size: 20px; }
 h1 { font-family: var(--display); font-weight: 900; font-size: clamp(38px, 7vw, 62px); line-height: 1.02; letter-spacing: -0.015em; margin: 8px 0 14px; text-wrap: balance; }
-.lede { font-size: 19px; color: var(--steel); max-width: 34ch; margin: 0 0 22px; }
+.lede { font-size: 19px; color: var(--steel); max-width: 52ch; margin: 0 auto 22px; }
 .cta { display: inline-block; background: var(--enamel); color: var(--paper); text-decoration: none; font-weight: 800; padding: 15px 26px; border-radius: 16px; }
 .cta.soft { background: transparent; color: var(--enamel); border: 2px solid var(--enamel); margin-left: 8px; }
 .hero-head { max-width: 720px; margin: 0 auto; text-align: center; }
 .hero-ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 4px; }
 /* One picture that carries the whole pitch: groceries in, list in the middle, dinner out. */
 /* A cut-out PNG, so it sits straight on the paper with no box around it. */
-.hero-art { width: 100%; max-width: 1060px; margin: 24px auto 0; display: block; }
+.hero-art { width: 100%; max-width: 1000px; margin: 8px auto 0; display: block; }
 
 /* sections */
 h2 { font-family: var(--display); font-weight: 700; font-size: clamp(26px, 4vw, 34px); line-height: 1.15; margin: 54px 0 6px; text-wrap: balance; }
