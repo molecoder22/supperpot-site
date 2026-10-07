@@ -38,14 +38,16 @@ nav a:hover, nav a[aria-current="page"] { color: var(--enamel); }
 .hero { padding: 28px 0 0; }
 .eyebrow { font-family: var(--display); font-style: italic; font-weight: 600; color: var(--steel); font-size: 20px; }
 h1 { font-family: var(--display); font-weight: 900; font-size: clamp(38px, 7vw, 62px); line-height: 1.02; letter-spacing: -0.015em; margin: 8px 0 14px; text-wrap: balance; }
-.lede { font-size: 19px; color: var(--steel); max-width: 52ch; margin: 0 auto 22px; }
+.lede { font-size: 19px; color: var(--steel); max-width: 46ch; margin: 0 0 22px; }
 .cta { display: inline-block; background: var(--enamel); color: var(--paper); text-decoration: none; font-weight: 800; padding: 15px 26px; border-radius: 16px; }
 .cta.soft { background: transparent; color: var(--enamel); border: 2px solid var(--enamel); margin-left: 8px; }
-.hero-head { max-width: 720px; margin: 0 auto; text-align: center; }
-.hero-ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 4px; }
+/* The picture carries the pitch, so it gets the bigger half and the words sit beside it. */
+.hero-grid { display: grid; grid-template-columns: minmax(300px, 0.85fr) 1.15fr; gap: 40px; align-items: center; }
+.hero-copy { text-align: left; }
+.hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 4px; }
 /* One picture that carries the whole pitch: groceries in, list in the middle, dinner out. */
 /* A cut-out PNG, so it sits straight on the paper with no box around it. */
-.hero-art { width: 100%; max-width: 1000px; margin: 8px auto 0; display: block; }
+.hero-art { width: 100%; height: auto; display: block; }
 
 /* sections */
 h2 { font-family: var(--display); font-weight: 700; font-size: clamp(26px, 4vw, 34px); line-height: 1.15; margin: 54px 0 6px; text-wrap: balance; }
@@ -78,6 +80,9 @@ footer { margin-top: 70px; border-top: 1px solid var(--line); padding: 22px 0 60
 footer nav { gap: 14px; margin-bottom: 8px; }
 
 @media (max-width: 760px) {
-  .hero-art { margin-top: 14px; width: 112%; max-width: none; margin-left: -6%; }
-  .lede { max-width: none; }
+  .hero-grid { grid-template-columns: 1fr; gap: 18px; }
+  .hero-copy { text-align: center; }
+  .hero-ctas { justify-content: center; }
+  .hero-art { max-width: 420px; margin: 0 auto; }
+  .lede { max-width: none; margin-inline: auto; }
 }
