@@ -44,7 +44,8 @@ h1 { font-family: var(--display); font-weight: 900; font-size: clamp(38px, 7vw, 
 .hero-head { max-width: 720px; margin: 0 auto; text-align: center; }
 .hero-ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 4px; }
 /* One picture that carries the whole pitch: groceries in, list in the middle, dinner out. */
-.hero-art { width: 100%; border-radius: 22px; margin-top: 28px; display: block; }
+/* A cut-out PNG, so it sits straight on the paper with no box around it. */
+.hero-art { width: 100%; max-width: 1060px; margin: 24px auto 0; display: block; }
 
 /* sections */
 h2 { font-family: var(--display); font-weight: 700; font-size: clamp(26px, 4vw, 34px); line-height: 1.15; margin: 54px 0 6px; text-wrap: balance; }
@@ -77,6 +78,6 @@ footer { margin-top: 70px; border-top: 1px solid var(--line); padding: 22px 0 60
 footer nav { gap: 14px; margin-bottom: 8px; }
 
 @media (max-width: 760px) {
-  .hero-art { margin-top: 20px; border-radius: 16px; }
+  .hero-art { margin-top: 14px; width: 112%; max-width: none; margin-left: -6%; }
   .lede { max-width: none; }
 }
