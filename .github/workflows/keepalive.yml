@@ -1,7 +1,10 @@
-# Supperpot's database lives on Supabase's free tier, which pauses a project after about a week with no traffic.
-# A paused project means no AI recipes, no sign-in and no subscriptions — so this calls the server once a day to
-# keep it awake until real users do it for us. The status call is anonymous and returns no personal data, which is
-# why there is no secret here.
+# Two jobs in one daily run.
+#
+# 1. Keeps the Supabase project awake — the free tier pauses after about a week of no traffic, and a paused
+#    project means no AI recipes, no sign-in and no subscriptions.
+# 2. Checks that the paid API keys still work. Both vendors have a free endpoint that only answers to a valid
+#    key, so this costs nothing and still catches a key that expired, was revoked, or ran out of credit —
+#    before a customer does. A red run emails Mário.
 name: Keep Supabase awake
 
 on:
@@ -19,10 +22,20 @@ jobs:
             "https://zpmyortbriyaktfvosqn.supabase.co/functions/v1/generate" \
             -H "Content-Type: application/json" \
             -d '{"kind":"status","device":"keepalive-github"}')
-          echo "HTTP $code"
-          cat /tmp/body
-          echo
+          echo "HTTP $code"; cat /tmp/body; echo
           if [ "$code" != "200" ]; then
             echo "::error::Supperpot server answered $code — the project may be paused or down."
+            exit 1
+          fi
+
+      - name: Check the AI keys are still alive
+        run: |
+          code=$(curl -sS -o /tmp/health -w "%{http_code}" --max-time 60 -X POST \
+            "https://zpmyortbriyaktfvosqn.supabase.co/functions/v1/generate" \
+            -H "Content-Type: application/json" \
+            -d '{"kind":"health"}')
+          echo "HTTP $code"; cat /tmp/health; echo
+          if [ "$code" != "200" ]; then
+            echo "::error::An AI key is dead or out of credit. Recipes and photo scanning are DOWN for every user. See the line above for which vendor."
             exit 1
           fi
