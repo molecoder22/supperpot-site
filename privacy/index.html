@@ -35,9 +35,11 @@
   <p>Because I am based in the European Union, European data protection law (the GDPR) applies to everything Supperpot does, for every user, wherever you live. If you are in the United States or Canada that works in your favour: you get the same protections European users do.</p>
 
   <h2>Signing in is optional</h2>
-  <p>You can tap "Continue without an account" and use every part of the app. Nothing is withheld, and we never ask again except from the Settings screen.</p>
-  <p>If you do sign in, with Apple or with Google, we receive from them two things: an account identifier and your email address. We do not receive your password, your contacts, your photos, your Google or Apple account contents, or anything else. With Sign in with Apple you may choose "Hide My Email", in which case we only ever see Apple's forwarding address and never your real one.</p>
-  <p>We use that email address for exactly one purpose: to recognise you when you open Supperpot on another phone, so your free trial, your daily recipe count and your Supperpot Plus subscription follow you instead of starting over. We do not send marketing email. We do not sell, rent or share the address.</p>
+  <p>Supperpot asks you to sign in before you subscribe, so your subscription, your answers and your first recipe can follow you to a new phone. You can sign in with Apple, with Google, or with an email address and a code we send to it.</p>
+  <p>When you sign in with Apple or Google, we receive from them two things: an account identifier and your email address. We do not receive your password, your contacts, your photos, your Google or Apple account contents, or anything else. With Sign in with Apple you may choose "Hide My Email", in which case we only ever see Apple's forwarding address and never your real one.</p>
+  <p>We use that email address for exactly one purpose: to recognise you when you open Supperpot on another phone, so your subscription, your daily recipe count, your onboarding answers and your first recipe follow you instead of starting over. We do not send marketing email. We do not sell, rent or share the address.</p>
+  <p>When you sign in, the app also stores on your account the answers you gave when you set it up (your cookware, what matters to you, household size, anything you avoid, how long you like to cook) and the first recipe it wrote for you, so they are there on a new phone. They are kept until you delete the account.</p>
+  <p>Subscriptions are processed by Apple and recorded for us by <b>RevenueCat</b> (RevenueCat, Inc., USA), which receives your purchase and subscription record from Apple, a random app-user identifier, your account identifier once you sign in, and the dates on which you reached each step of the sign-up flow (for example "saw the paywall"). RevenueCat never receives your email address, your photos, your answers or your recipes. We use it only to know whether a subscription is active and to see how many people subscribe.</p>
   <p>Signing out on the phone removes the account from it immediately. <b>To delete the account and its email address from the server entirely, open Settings and tap "Delete my account".</b> It asks twice, then erases your account, your email address and your usage record from the server for good. Your recipes, plan and notes stay on the phone, because they were never on the server; "Clear all my data" is the separate button for those.</p>
 
   <h2>What stays on your phone</h2>
@@ -54,20 +56,22 @@
   <h2>Recipe illustrations</h2>
   <p>New recipes get an illustration generated from the recipe text by an image model (OpenAI's GPT Image, reached through fal.ai). Only the recipe's title and its ingredient names are sent.</p>
 
-  <h2>Supperpot Plus</h2>
-  <p>Subscriptions are sold and billed by Apple through the App Store. We receive from Apple only whether a subscription is active and when it expires. We never see your name, your payment details or your Apple ID. Manage or cancel a subscription in your iPhone settings.</p>
+  <h2>The subscription</h2>
+  <p>Subscriptions are sold and billed by Apple through the App Store. We receive only whether a subscription is active and when it expires, passed to us by RevenueCat (see above). We never see your name, your payment details or your Apple ID. Manage or cancel a subscription in your iPhone settings.</p>
 
   <h2>Notifications</h2>
   <p>The daily pick reminder and the cooking timers are local notifications scheduled on your device. Nothing is sent to a server and no push service is used.</p>
 
   <h2>Analytics and advertising</h2>
-  <p>Supperpot contains no analytics SDK, no advertising SDK and no tracking of any kind. It keeps simple anonymous counts of feature use on your device only, which never leave the phone. Our server keeps ordinary request logs containing the random identifier, the caller's address and a timestamp, for reliability and to stop abuse.</p>
+  <p>Supperpot contains no advertising SDK and no tracking of any kind. It keeps simple anonymous counts of feature use on your device, and records in RevenueCat the date you reached each step of the sign-up flow (nothing about what you cooked or typed). Our server keeps ordinary request logs containing the random identifier, the caller's address and a timestamp, for reliability and to stop abuse.</p>
 
   <h2>Why we are allowed to hold what we hold</h2>
   <p>European law asks for a reason for each piece of data, not just a description. Here they are.</p>
   <ul>
-    <li><b>Random device identifier, daily recipe count, subscription status</b> &mdash; to give you what the app promises, including the free trial and the daily allowance. Legal basis: performance of a contract with you.</li>
-    <li><b>Email address and account identifier</b>, if you sign in &mdash; so your trial, allowance and subscription follow you to a new phone. Legal basis: performance of a contract with you.</li>
+    <li><b>Random device identifier, daily recipe count, subscription status</b> &mdash; to give you what the app promises, including the daily allowance. Legal basis: performance of a contract with you.</li>
+    <li><b>Email address and account identifier</b> &mdash; so your subscription, allowance, answers and first recipe follow you to a new phone. Legal basis: performance of a contract with you.</li>
+    <li><b>Your set-up answers and your first recipe</b>, stored on your account &mdash; so a new phone starts where this one left off. Legal basis: performance of a contract with you.</li>
+    <li><b>Sign-up step dates in RevenueCat</b> &mdash; to see where people give up and improve the app. Legal basis: our legitimate interest in understanding how the app is used; nothing personal is included.</li>
     <li><b>Your photo and your "what I have" text</b> &mdash; to write the recipe you asked for. Legal basis: performance of a contract, and for the camera and photo library themselves, your consent, which you give through iOS and can take back in iOS Settings at any time.</li>
     <li><b>The caller's network address and request logs</b> &mdash; to keep the service up and stop one person running up the AI bill for everyone. Legal basis: our legitimate interest in running a service that does not fall over or go bankrupt.</li>
   </ul>
@@ -119,7 +123,7 @@
 
   <h2>Your choices</h2>
   <ul>
-    <li>You never have to sign in. "Continue without an account" gives you the whole app.</li>
+    <li>You can look at the app, answer the questions and get your first recipe written before you sign in or pay anything.</li>
     <li>The 100-recipe library, cook mode, the planner and the grocery list work with no network at all.</li>
     <li>Turning off camera or photo access in iOS Settings disables Snap my groceries and nothing else.</li>
     <li>"Export my data" in Settings gives you a copy of everything the app holds on your phone.</li>
